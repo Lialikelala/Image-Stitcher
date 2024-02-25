@@ -2,7 +2,11 @@
 
 For example, if you have a bunch of images of a manhwa chapter ripped from a site that are too short, simply upload the images you want to combine together at the same time. The script will automatically combine them vertically into a longer panel. You can then download that produced image.
 
+Expect more updates to come soon! I plan to increase functionality as much as possible (as well as update the UI to be more pleasing to the eye).
+
 FYI: Look near the bottom of this document for the **Installation Guide** if you need help. I also have a YouTube video tutorial for using Image Stitcher (both versions): https://www.youtube.com/watch?v=cCSRCmCfyhs
+
+___
 
 **Got Input? Contact me. :D**
 *Hi! My name is Lia. I enjoy helping with Manhwa/Manhua scanlation projects. I’m not a coder. Most of my script was heavily reliant on ChatGPT’s input (I maxed out on conversations so many times because I was asking so many questions lmao), and I’ve just stumbled my way through to something that actually works. I’ve learned more about coding in html and Javascript in the past three days I’ve been working on this non-stop than I have ever before in my life lol… and I still know basically nothing.*
@@ -10,12 +14,15 @@ FYI: Look near the bottom of this document for the **Installation Guide** if you
 *My Discord: @LiaLikeLaLa*.
 *Feel free to message me with any questions, any improvements or suggestions, or if you just want another friend who has similar interests <3. 
 Especially reach out if you’re willing to help me learn some code and make this script better! ;)*
+___
 
 The **ImageStitcher v1.2.html** file is the simplest and most stable version. 
 
 The **ImageStitcher BATCH.html** files implements an “enable Batch mode” and “autoDownload” feature for batch handling of images. 
 
 But the regular ImageStitcher v1.2 serves its purpose well if you don’t mind having to drag and drop (or select) each batch of images manually rather than all at once.
+
+___
 
 **Use case for regular ImageStitcher (non-Batch):**
 
@@ -27,10 +34,11 @@ Btw, the BATCH version file also includes this functionality… just with even m
 
 Also, I’m well aware the UI isn’t exactly a looker XD. At least it’s straightforward and it shouldn’t make anyone confused. I’m willing to take suggestions though lol.
 
+___
+
 **Use case for the ImageStitcher BATCH version:**
 
-	I have 50 .jpg images taken from a manhwa chapter. I want to consolidate that into
-something more reasonable, let’s say to around 16 or so images. 
+I have 50 .jpg images taken from a manhwa chapter. I want to consolidate that into something more reasonable, let’s say to around 16 or so images. 
 
 With Batch Mode Enabled, I set Batch Size = 3 (which is the default value). This means every three images will be grouped in a batch and then combined.  
 (FYI: Adjusting BatchSize lets you increase or decrease the number of images included in a single “batch” (or combined image). This is called batch size)). 
@@ -46,23 +54,18 @@ So to solve this, I can click the “Remove Image From Batch” button (moves th
 I can also click “Add Image To Batch” (moves the first image of the following batch to the end of your current batch). 
 
 This way I can customize what I’m downloading without having to restart the entire process and having to reselect which images are to be combined. 
+___
 
-Also, I’m aware the UI for the BATCH versions is ugly and messy at the moment. That will change soon once I figure out the rest of the backend. 
+**Installation Guide: How to Install**
 
-
-
-
-Installation Guide: How to Install
-
-Download the html file (either ImageStitcher v1.2.html or ImageStitcher BATCH v2.html) from the “Lia’s Tools” Google Drive folder. 
-Keep in mind that any future versions I make will be added to the Drive folder “Lia’s Tools”—so you’ll have to check this folder if you want to download any future updated versions.
-Locate the .html file in your file directory (“Finder” if on a Mac).
-Right-click the .html file. 
-Then click “Open With” and select your browser. I use Chrome.
+1. Download the .html file (either ImageStitcher v1.2.html or ImageStitcher BATCH v2.html) from the “Lia’s Tools” Google Drive folder or from here in GitHub. 
+2. Locate the .html file in your file directory (“Finder” if on a Mac).
+3. Right-click the .html file. 
+4. Then click “Open With” and select your browser. I use Chrome.
 
 If the html file saves as a .txt file (might appear as .html.txt) and opens as just html text rather than as a functional script, try:
 
-Right click and attempt to “Rename” the file and then press enter (ensuring its name says .html and not .txt). 
+Right-click and attempt to “Rename” the file and then press enter (ensuring its name says .html and not .txt). 
 On my Mac, I get the prompt: Are you sure you want to change the extension from “.txt” to “.html”? 
 I click “Use .html” 
 The link should now work (assuming you clicked ‘Open With’ your browser of choice, in my case, Chrome)
