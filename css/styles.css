@@ -1,0 +1,73 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+h1 {
+    color: #007bff; 
+    font-size: 2em; 
+    margin-bottom: 20px; /* Adds space below the title */
+}
+
+#dropArea {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    width: calc(100% - 44px); /* Adjust width for padding and border */
+    cursor: pointer;
+}
+
+#dropArea.highlight {
+    background-color: #f0f0f0; /* Light grey background */
+    border: 2px dashed #000; /* Dashed border */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #eee;
+    margin: 20px 0;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    width: 0%; /* Initial width */
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    line-height: 20px; /* To center text vertically */
+}
+
+#canvas {
+    border: 0px solid #000;
+    margin-top: 20px;
+}
+
+#downloadLink {
+    display: none; /* Initially hide the download link */
+    margin-bottom: 10px; /* Adds space below the Download button */
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer; /* Makes the cursor a pointer when hovering over the link*/
+}
