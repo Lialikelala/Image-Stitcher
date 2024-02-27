@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Combine Images</title>
+    <title>Image Stitcher</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,13 +12,12 @@
         <p>Drag and drop images here or click to select</p>
         <input type="file" multiple id="fileInput" style="display: none;">
     </div>
-    <button onclick="combineImages()">Combine Images</button>
-    <button onclick="resetCanvas()">Reset</button>
-    <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
-    </div>
-    <a id="downloadLink" href="#" style="display:none;">Download Image</a>
+    <!-- Removed inline `onclick` attribute and added IDs for buttons -->
+    <button id="resetButton">Reset</button>
     <br>
+    <br>
+    <div id="messageArea"></div>
+    <a id="downloadLink" href="#" style="display:none;">Download Image</a>
     <canvas id="canvas"></canvas>
     <script src="javascript/index.js"></script>
 </body>

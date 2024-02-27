@@ -41,24 +41,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-.progress-container {
-    width: 100%;
-    background-color: #eee;
-    margin: 20px 0;
-    height: 20px;
-    border-radius: 5px;
-}
-
-.progress-bar {
-    height: 100%;
-    background-color: #007bff;
-    width: 0%; /* Initial width */
-    border-radius: 5px;
-    text-align: center;
-    color: white;
-    line-height: 20px; /* To center text vertically */
-}
-
 #canvas {
     border: 0px solid #000;
     margin-top: 20px;
@@ -66,6 +48,7 @@ button:hover {
 
 #downloadLink {
     display: block; /* Adjust based on when you want to show it */
+    margin-top; 10px;
     margin-bottom: 10px; /* Adds space below the Download button */
     text-decoration: none;
     color: #007bff;
