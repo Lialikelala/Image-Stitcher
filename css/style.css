@@ -54,3 +54,9 @@ button:hover {
     color: #007bff;
     cursor: pointer; /* Makes the cursor a pointer when hovering over the link*/
 }
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
