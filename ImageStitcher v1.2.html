@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combine Images</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Image Stitcher</h1>
+    <div id="dropArea">
+        <p>Drag and drop images here or click to select</p>
+        <input type="file" multiple id="fileInput" style="display: none;">
+    </div>
+    <button onclick="combineImages()">Combine Images</button>
+    <button onclick="resetCanvas()">Reset</button>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <a id="downloadLink" href="#" style="display:none;">Download Image</a>
+    <br>
+    <canvas id="canvas"></canvas>
+    <script src="javascript/index.js"></script>
+</body>
+</html>
