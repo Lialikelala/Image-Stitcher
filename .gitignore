@@ -53,3 +53,8 @@ replay_pid*
 # Testing
 *.test.js
 *.spec.js
+tests/
+*.vscode
+*.json
+/node_modules
+*.config.js

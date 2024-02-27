@@ -67,6 +67,19 @@ class ImageStitcher {
         return images.reduce((total, img) => total + img.height, 0);
     }    
 
+    renderImages(loadedImages, maxWidth, totalHeight) {
+        let yOffset = 0;
+        this.canvas.width = maxWidth;
+        this.canvas.height = totalHeight;
+
+        loadedImages.forEach(img => {
+            this.ctx.drawImage(img, 0, yOffset, img.width, img.height);
+            yOffset += img.height;
+        });
+
+        this.setupDownloadLink();
+    }
+
     combineImages() {
         const images = this.fileInput.files;
         if (images.length < 1) {
@@ -95,19 +108,6 @@ class ImageStitcher {
                 this.messageArea.textContent = error; // Display loading error
             });
     }    
-
-    renderImages(loadedImages, maxWidth, totalHeight) {
-        let yOffset = 0;
-        this.canvas.width = maxWidth;
-        this.canvas.height = totalHeight;
-
-        loadedImages.forEach(img => {
-            this.ctx.drawImage(img, 0, yOffset, img.width, img.height);
-            yOffset += img.height;
-        });
-
-        this.setupDownloadLink();
-    }
 
     setupDownloadLink() {
         this.downloadLink.onclick = (e) => {
@@ -150,3 +150,5 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("One or more elements couldn't be found. Please check the IDs.");
     }
 });
+
+module.exports = ImageStitcher;
