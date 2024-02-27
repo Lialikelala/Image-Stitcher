@@ -1,3 +1,5 @@
+**Please note that a lot is subject to change as I am majorly rewriting the code to increase scalability to support future features and better BATCH implementation. Stay tuned! You can check the batch-feature branch for the most recent changes.**
+
 **ImageStitcher** is a very simple HTML & Javascript you can run from your browser. It lets you combine images together vertically for manhwa/comic scanlation usage.
 
 For example, if you have a bunch of images of a manhwa chapter ripped from a site that are too short, simply upload the images you want to combine together at the same time. The script will automatically combine them vertically into a longer panel. You can then download that produced image.
